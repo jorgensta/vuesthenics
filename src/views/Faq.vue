@@ -18,9 +18,9 @@
             <v-expansion-panel-header>
               <h2 class="panel-header">{{ question }}</h2>
             </v-expansion-panel-header>
-            <v-expansion-panel-content class="panel-content">{{
-              answer
-            }}</v-expansion-panel-content>
+            <v-expansion-panel-content class="panel-content">
+              {{ answer }}
+            </v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>
       </transition>
@@ -100,6 +100,7 @@ export default class Faq extends Vue {
 .panel {
   margin: 10px;
   max-width: 80%;
+  opacity: 0.95;
 }
 .panel-header {
   font-weight: 300;
