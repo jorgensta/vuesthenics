@@ -9,7 +9,7 @@ import Vue from "vue";
 import Component from "vue-class-component";
 import { Prop } from "vue-property-decorator";
 
-@Component({})
+@Component
 export default class LinkButton extends Vue {
   @Prop() link!: String;
   @Prop() name!: String;

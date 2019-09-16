@@ -1,20 +1,24 @@
 <template>
   <div>
-    <LocalizationButton />
+    <NewsFeed class="hello" />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 import Component from "vue-class-component";
-
-import LocalizationButton from "../components/LocalizationButton.vue";
+import NewsFeed from "../components/NewsFeed.vue";
 
 @Component({
   components: {
-    LocalizationButton
+    NewsFeed
   }
 })
 export default class Home extends Vue {}
 </script>
-<style scoped></style>
+<style scoped>
+.hello {
+  z-index: 1;
+  color: white;
+}
+</style>

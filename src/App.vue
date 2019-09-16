@@ -1,5 +1,11 @@
 <template>
-  <v-app id="inspire">
+  <v-app
+    id="inspire"
+    :style="{
+      backgroundImage: 'url(' + require('@/assets/bilde1-4.jpg') + ')',
+      backgroundSize: 'cover'
+    }"
+  >
     <NavBar />
     <v-content>
       <router-view></router-view>
@@ -22,6 +28,10 @@ export default class App extends Vue {}
 </script>
 
 <style scoped>
+.hello {
+  z-index: inherit;
+  color: white;
+}
 .title {
   color: whitesmoke;
   font: 100;
