@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <NewsFeed class="hello" />
+  <div class="zindex">
+    <Status />
+    <NewsFeed class="zindex" />
   </div>
 </template>
 
@@ -8,6 +9,7 @@
 import Vue from "vue";
 import Component from "vue-class-component";
 import NewsFeed from "../components/NewsFeed.vue";
+import Status from "../components/Status.vue";
 
 @Component({
   components: {
@@ -16,9 +18,4 @@ import NewsFeed from "../components/NewsFeed.vue";
 })
 export default class Home extends Vue {}
 </script>
-<style scoped>
-.hello {
-  z-index: 1;
-  color: white;
-}
-</style>
+<style></style>

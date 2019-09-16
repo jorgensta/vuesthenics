@@ -27,8 +27,8 @@ import NavBar from "./components/NavBar.vue";
 export default class App extends Vue {}
 </script>
 
-<style scoped>
-.hello {
+<style>
+.zindex {
   z-index: inherit;
   color: white;
 }

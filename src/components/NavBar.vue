@@ -1,21 +1,21 @@
 <template>
   <div>
     <v-app-bar class="app-bar" app height="100" color="black">
-      <div v-resize="onResize">
+      <div class="container" v-resize="onResize">
         <v-app-bar-nav-icon
           v-if="isMobile"
           color="primary"
           @click.stop="drawer = !drawer"
         ></v-app-bar-nav-icon>
-      </div>
-      <v-layout align-center justify-space-between>
-        <v-img
-          src="../assets/NTNUI_TRYKK.png"
-          contain
-          height="80"
-          max-width="160"
-        />
-        <div class="flex" v-if="!isMobile">
+        <div>
+          <v-img
+            src="../assets/NTNUI_TRYKK.png"
+            contain
+            height="80"
+            max-width="160"
+          />
+        </div>
+        <div class="flex-container" v-if="!isMobile">
           <LinkButton
             v-for="link in links"
             :key="link.name"
@@ -23,8 +23,10 @@
             :link="link.link"
           />
         </div>
-        <LocalizationButton />
-      </v-layout>
+        <div>
+          <LocalizationButton />
+        </div>
+      </div>
     </v-app-bar>
 
     <v-navigation-drawer color="black" v-model="drawer" absolute temporary>
@@ -51,9 +53,9 @@
           :to="link.link"
         >
           <v-list-item-content>
-            <v-list-item-title class="list-item-text">{{
-              link.name
-            }}</v-list-item-title>
+            <v-list-item-title class="list-item-text">
+              {{ link.name }}
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -94,6 +96,10 @@ export default class NavBar extends Vue {
     {
       name: "Apply",
       link: "/apply"
+    },
+    {
+      name: "F.A.Q.",
+      link: "/faq"
     }
   ];
 
@@ -104,7 +110,7 @@ export default class NavBar extends Vue {
 </script>
 
 <style scoped>
-.flex {
+.flex-container {
   display: flex;
 }
 .spaceBlock {
@@ -118,7 +124,11 @@ export default class NavBar extends Vue {
   font-size: 20px;
   margin: 5px;
 }
-
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .tile {
   margin: 5px;
   border-radius: 4px;
