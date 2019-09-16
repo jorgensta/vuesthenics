@@ -1,18 +1,20 @@
 <template>
   <div>
-    <LocalizationButton />
+    <button>Change locale!</button>
+    <CountryFlag country="no" />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 import Component from "vue-class-component";
-
-import LocalizationButton from "../components/LocalizationButton.vue";
+import { Watch } from "vue-property-decorator";
 
 @Component({
-  components: {
-    LocalizationButton
+  filters: {
+    countryFilter(value: string): string {
+      return value === "en" ? "gb" : value;
+    }
   }
 })
 export default class Home extends Vue {}

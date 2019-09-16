@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "es5",
     "module": "esnext",
     "strict": true,
     "jsx": "preserve",
@@ -12,6 +12,9 @@
     "sourceMap": true,
     "baseUrl": ".",
     "types": [
+      "webpack-env",
+      "vuetify",
+      "webpack",
       "webpack-env"
     ],
     "paths": {
@@ -31,7 +34,9 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "tests/**/*.ts",
-    "tests/**/*.tsx"
+    "tests/**/*.tsx",
+    "src/setup/i18n.ts",
+    "src/setup/i18n.ts"
   ],
   "exclude": [
     "node_modules"
