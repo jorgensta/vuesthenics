@@ -23,9 +23,7 @@
             :link="link.link"
           />
         </div>
-        <div>
-          <LocalizationButton />
-        </div>
+        <div></div>
       </div>
     </v-app-bar>
 
@@ -53,9 +51,9 @@
           :to="link.link"
         >
           <v-list-item-content>
-            <v-list-item-title class="list-item-text">
-              {{ link.name }}
-            </v-list-item-title>
+            <v-list-item-title class="list-item-text">{{
+              link.name
+            }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
