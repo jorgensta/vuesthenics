@@ -13,7 +13,8 @@ import Status from "../components/Status.vue";
 
 @Component({
   components: {
-    NewsFeed
+    NewsFeed,
+    Status
   }
 })
 export default class Home extends Vue {}

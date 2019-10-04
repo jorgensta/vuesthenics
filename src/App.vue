@@ -3,7 +3,8 @@
     id="inspire"
     :style="{
       backgroundImage: 'url(' + require('@/assets/bilde1-4.jpg') + ')',
-      backgroundSize: 'cover'
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: '100% auto'
     }"
   >
     <NavBar />
@@ -30,7 +31,6 @@ export default class App extends Vue {}
 <style>
 .zindex {
   z-index: inherit;
-  color: white;
 }
 .title {
   color: whitesmoke;

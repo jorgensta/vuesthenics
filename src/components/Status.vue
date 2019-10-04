@@ -1,5 +1,5 @@
 <template>
-  <div>STATUS!</div>
+  <div></div>
 </template>
 
 <script lang="ts">
