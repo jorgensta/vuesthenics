@@ -18,7 +18,7 @@
 
                     <div>
                       <p
-                        class="ma-0 body-1 font-weight-bold font-italic text-left"
+                        class="ma-0 body-1 font-weight-bold font-italic text-left text-shadow: 1px 0 0"
                       >
                         {{ item.text }}
                       </p>
@@ -27,22 +27,6 @@
                       >
                         {{ item.subtext }}
                       </p>
-                    </div>
-
-                    <div class="align-self-center">
-                      <v-btn
-                        v-for="(icon, index) in icons"
-                        :key="index"
-                        :class="{ 'show-btns': hover }"
-                        color="transparent"
-                        icon
-                      >
-                        <v-icon
-                          :class="{ 'show-btns': hover }"
-                          color="transparent"
-                          >{{ icon }}</v-icon
-                        >
-                      </v-btn>
                     </div>
                   </v-row>
                 </v-card-title>
@@ -65,23 +49,11 @@ export default class FeedItem extends Vue {
   icons: Array<String> = ["mdi-rewind", "mdi-play", "mdi-fast-forward"];
   items: Array<Object> = [
     {
-      title: "New Releases",
-      text: "It's New Release Friday",
-      subtext: "Newly released songs. Updated daily.",
-      img: "http://lorempixel.com/output/nightlife-q-c-640-480-5.jpg"
-    },
-    {
-      title: "Rock",
-      text: "Greatest Rock Hits",
-      subtext: "Lose yourself in rock tunes.",
+      title: "",
+      text: "",
+      subtext: "",
       img:
-        "https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"
-    },
-    {
-      title: "Mellow Moods",
-      text: "Ambient Bass",
-      subtext: "Chill beats to mellow you out.",
-      img: "http://lorempixel.com/output/abstract-q-c-640-480-6.jpg"
+        "https://scontent.fosl3-2.fna.fbcdn.net/v/t1.0-9/30742026_10160344381530626_3815715122622496768_n.jpg?_nc_cat=101&_nc_oc=AQniK1wD0MB8qFxfti17KsrKlAhi0KDor56O9xJwRzSHJrx-tpLNY3z2QiKUi1YfQzw&_nc_ht=scontent.fosl3-2.fna&oh=6c2f8099383b9c88c9475c5bdb1c0463&oe=5E251EE3"
     }
   ];
 }
@@ -101,5 +73,12 @@ export default class FeedItem extends Vue {
 
 .show-btns {
   color: rgba(255, 255, 255, 1) !important;
+}
+
+.mt-4,
+.ma-0,
+.main-text {
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: black;
 }
 </style>

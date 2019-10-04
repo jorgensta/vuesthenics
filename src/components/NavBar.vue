@@ -12,7 +12,7 @@
             src="../assets/NTNUI_TRYKK.png"
             contain
             height="80"
-            max-width="160"
+            max-width="140"
           />
         </div>
         <div class="flex-container" v-if="!isMobile">
@@ -23,7 +23,7 @@
             :link="link.link"
           />
         </div>
-        <div></div>
+        <div width="140"></div>
       </div>
     </v-app-bar>
 
@@ -51,9 +51,9 @@
           :to="link.link"
         >
           <v-list-item-content>
-            <v-list-item-title class="list-item-text">{{
-              link.name
-            }}</v-list-item-title>
+            <v-list-item-title class="list-item-text">
+              {{ link.name }}
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
