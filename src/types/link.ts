@@ -1,7 +1,10 @@
+export type Link = {
+  name: String;
+  link: String;
+};
 
-type LinkProp = {
-    name: String,
-    link: String
-}
-
-export default LinkProp;
+export type LinkProp = {
+  name: String;
+  link: String;
+  menuLinks?: Array<Link>;
+};

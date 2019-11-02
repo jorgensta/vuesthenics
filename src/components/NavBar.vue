@@ -9,7 +9,7 @@
         ></v-app-bar-nav-icon>
         <div>
           <v-img
-            src="../assets/NTNUI_TRYKK.png"
+            src="../assets/CALISTHENICS_LOGO_NETTSIDE.png"
             contain
             height="80"
             max-width="140"
@@ -21,6 +21,7 @@
             :key="link.name"
             :name="link.name"
             :link="link.link"
+            :menuLinks="link.menuLinks"
           />
         </div>
         <div width="140"></div>
@@ -51,9 +52,9 @@
           :to="link.link"
         >
           <v-list-item-content>
-            <v-list-item-title class="list-item-text">
-              {{ link.name }}
-            </v-list-item-title>
+            <v-list-item-title class="list-item-text">{{
+              link.name
+            }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -63,7 +64,6 @@
 
 <script lang="ts">
 import Vue from "vue";
-import Link from "../types/link";
 import Component from "vue-class-component";
 import LinkButton from "./LinkButton.vue";
 import LocalizationButton from "./LocalizationButton.vue";

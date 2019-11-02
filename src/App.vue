@@ -11,6 +11,7 @@
     <v-content>
       <router-view></router-view>
     </v-content>
+    <FooterBar />
   </v-app>
 </template>
 
@@ -19,10 +20,12 @@ import Vue from "vue";
 import { Prop } from "vue-property-decorator";
 import Component from "vue-class-component";
 import NavBar from "./components/NavBar.vue";
+import FooterBar from "./components/FooterBar.vue";
 
 @Component({
   components: {
-    NavBar
+    NavBar,
+    FooterBar
   }
 })
 export default class App extends Vue {}
