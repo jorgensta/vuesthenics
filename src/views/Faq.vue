@@ -18,9 +18,9 @@
             <v-expansion-panel-header>
               <h2 class="panel-header">{{ question }}</h2>
             </v-expansion-panel-header>
-            <v-expansion-panel-content class="panel-content">
-              {{ answer }}
-            </v-expansion-panel-content>
+            <v-expansion-panel-content class="panel-content">{{
+              answer
+            }}</v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>
       </transition>
@@ -47,7 +47,7 @@ export default class Faq extends Vue {
     {
       question: "Is the group full?",
       answer:
-        "Yes, currently our group is full. We invite more members when we the capacity for it"
+        "Yes, currently our group is full. We invite more members when we the capacity allow for it"
     },
     {
       question: "How can i become a member?",
