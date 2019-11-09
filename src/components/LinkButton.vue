@@ -17,13 +17,9 @@ export default class LinkButton extends Vue {
   @Prop() link!: String;
   @Prop() name!: String;
 
-  onLogger(): void {
-    console.log("Button clicked");
-  }
+  onLogger(): void {}
 
-  mounted() {
-    console.log("LinkButton is mounted", this.name);
-  }
+  mounted() {}
 }
 </script>
 

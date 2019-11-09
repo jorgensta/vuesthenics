@@ -52,9 +52,9 @@
           :to="link.link"
         >
           <v-list-item-content>
-            <v-list-item-title class="list-item-text">
-              {{ link.name }}
-            </v-list-item-title>
+            <v-list-item-title class="list-item-text">{{
+              link.name
+            }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -95,6 +95,10 @@ export default class NavBar extends Vue {
     {
       name: "Apply",
       link: "/apply"
+    },
+    {
+      name: "Instagram",
+      link: "/instagram"
     },
     {
       name: "F.A.Q.",

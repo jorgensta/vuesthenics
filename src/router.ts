@@ -5,6 +5,7 @@ const Home = () => import("./views/Home.vue");
 const About = () => import("./views/About.vue");
 const Faq = () => import("./views/Faq.vue");
 const Apply = () => import("./views/Apply.vue");
+const Instagram = () => import("./views/Instagram.vue");
 
 Vue.use(Router);
 
@@ -35,6 +36,11 @@ export default new Router({
       path: "/faq",
       name: "faq",
       component: Faq
+    },
+    {
+      path: "/instagram",
+      name: "instagram",
+      component: Instagram
     }
   ]
 });
