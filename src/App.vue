@@ -3,8 +3,7 @@
     id="inspire"
     :style="{
       backgroundImage: 'url(' + require('@/assets/bilde1-4.jpg') + ')',
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: '100% auto'
+      backgroundRepeat: 'repeat'
     }"
   >
     <NavBar />
