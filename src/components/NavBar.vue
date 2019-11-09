@@ -52,9 +52,9 @@
           :to="link.link"
         >
           <v-list-item-content>
-            <v-list-item-title class="list-item-text">{{
-              link.name
-            }}</v-list-item-title>
+            <v-list-item-title class="list-item-text">
+              {{ link.name }}
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -67,6 +67,7 @@ import Vue from "vue";
 import Component from "vue-class-component";
 import LinkButton from "./LinkButton.vue";
 import LocalizationButton from "./LocalizationButton.vue";
+import { Link } from "../types/link";
 
 @Component({
   components: {
