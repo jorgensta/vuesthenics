@@ -40,7 +40,7 @@ import Component from "vue-class-component";
 @Component({})
 export default class Apply extends Vue {}
 </script>
-<style scoped lang="styl">
+<style scoped>
 .container {
   color: white;
   margin-top: 1%;
