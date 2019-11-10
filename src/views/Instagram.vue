@@ -44,6 +44,7 @@ export default class Instagram extends Vue {
     const url = `https://api.instagram.com/v1/users/self/media/recent/?access_token=${
       this.token
     }`;
+
     fetch(url)
       .then(res => res.json())
       .then(({ data }) => (this.ImageInfo = data.slice(0, 15)));
