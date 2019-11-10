@@ -18,7 +18,6 @@
                   <v-img
                     :src="image.images.standard_resolution.url"
                     aspect-ratio="1"
-                    @click="clicked(image)"
                   />
                 </a>
               </v-card>
@@ -55,10 +54,6 @@ export default class Instagram extends Vue {
 
   mounted() {
     this.fetchData();
-  }
-
-  clicked(image: Object) {
-    console.log("clicked", image);
   }
 }
 </script>
