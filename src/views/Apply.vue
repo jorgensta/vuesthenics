@@ -58,6 +58,6 @@ export default class Apply extends Vue {}
 }
 
 .paragraph {
-  font-size: calc(0.6vw + 0.6vh + 0.5vmin);
+  font-size: calc(0.2vw + 1.4vh + 0.4vmin);
 }
 </style>

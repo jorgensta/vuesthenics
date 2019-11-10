@@ -30,7 +30,7 @@ export default new Vuetify({
           tekst: colors.lightBlue.base
         },
         secondary: {
-          base: colors.grey.darken4,
+          base: "#00843d",
           lighten5: colors.grey.darken4,
           lighten4: colors.grey.darken4,
           lighten3: colors.grey.darken4,

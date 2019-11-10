@@ -16,10 +16,6 @@ import { Link } from "../types/link";
 export default class LinkButton extends Vue {
   @Prop() link!: String;
   @Prop() name!: String;
-
-  onLogger(): void {}
-
-  mounted() {}
 }
 </script>
 
@@ -47,8 +43,9 @@ export default class LinkButton extends Vue {
 }
 
 .btnActive {
-  background: #00843d transparent;
+  background: #00843d;
 }
+
 h2 {
   font-weight: 300;
   color: white;

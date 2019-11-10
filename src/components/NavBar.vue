@@ -52,9 +52,9 @@
           :to="link.link"
         >
           <v-list-item-content>
-            <v-list-item-title class="list-item-text">
-              {{ link.name }}
-            </v-list-item-title>
+            <v-list-item-title class="list-item-text">{{
+              link.name
+            }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -76,9 +76,17 @@ import { Link } from "../types/link";
   }
 })
 export default class NavBar extends Vue {
-  isMobile: boolean = false;
   drawer: boolean = false;
 
+  get isMobile(): boolean {
+    switch (this.$vuetify.breakpoint.name) {
+      case "xs":
+      case "sm":
+        return true;
+      default:
+        return false;
+    }
+  }
   links: Array<Link> = [
     {
       name: "About",
@@ -101,10 +109,6 @@ export default class NavBar extends Vue {
       link: "/faq"
     }
   ];
-
-  onResize() {
-    this.isMobile = window.innerWidth <= 880;
-  }
 }
 </script>
 
@@ -133,9 +137,9 @@ export default class NavBar extends Vue {
   border-radius: 4px;
 }
 .tile:hover {
-  background: green;
+  background: #00843d;
 }
 .tile--active {
-  background: green;
+  background: #00843d;
 }
 </style>
