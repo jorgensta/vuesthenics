@@ -47,7 +47,7 @@ export default class LinkButton extends Vue {
 }
 
 .btnActive {
-  background: #00843d;
+  background: #00843d transparent;
 }
 h2 {
   font-weight: 300;

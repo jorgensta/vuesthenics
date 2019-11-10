@@ -52,9 +52,9 @@
           :to="link.link"
         >
           <v-list-item-content>
-            <v-list-item-title class="list-item-text">{{
-              link.name
-            }}</v-list-item-title>
+            <v-list-item-title class="list-item-text">
+              {{ link.name }}
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -80,10 +80,6 @@ export default class NavBar extends Vue {
   drawer: boolean = false;
 
   links: Array<Link> = [
-    {
-      name: "Home",
-      link: "/home"
-    },
     {
       name: "About",
       link: "/about"
