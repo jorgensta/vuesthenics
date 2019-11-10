@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-app-bar class="app-bar" app height="100" color="black">
-      <div class="container" v-resize="onResize">
+      <div class="container">
         <v-app-bar-nav-icon
           v-if="isMobile"
           color="primary"
@@ -52,9 +52,9 @@
           :to="link.link"
         >
           <v-list-item-content>
-            <v-list-item-title class="list-item-text">{{
-              link.name
-            }}</v-list-item-title>
+            <v-list-item-title class="list-item-text">
+              {{ link.name }}
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>

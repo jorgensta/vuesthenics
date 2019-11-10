@@ -14,10 +14,13 @@
                 :elevation="hover ? 12 : 2"
                 :class="{ 'on-hover': hover }"
               >
-                <v-img
-                  :src="image.images.standard_resolution.url"
-                  aspect-ratio="1"
-                />
+                <a :href="image.link" target="_blank">
+                  <v-img
+                    :src="image.images.standard_resolution.url"
+                    aspect-ratio="1"
+                    @click="clicked(image)"
+                  />
+                </a>
               </v-card>
             </v-hover>
           </v-col>
@@ -52,6 +55,10 @@ export default class Instagram extends Vue {
 
   mounted() {
     this.fetchData();
+  }
+
+  clicked(image: Object) {
+    console.log("clicked", image);
   }
 }
 </script>
