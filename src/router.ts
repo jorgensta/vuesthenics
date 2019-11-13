@@ -1,8 +1,9 @@
 import Vue from "vue";
 import Router from "vue-router";
 
+import About from "./views/About.vue";
+
 const Home = () => import("./views/Home.vue");
-const About = () => import("./views/About.vue");
 const Faq = () => import("./views/Faq.vue");
 const Apply = () => import("./views/Apply.vue");
 const Instagram = () => import("./views/Instagram.vue");

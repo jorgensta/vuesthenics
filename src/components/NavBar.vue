@@ -1,46 +1,36 @@
 <template>
   <div>
     <v-app-bar class="app-bar" app height="100" color="black">
-      <div class="container">
-        <v-app-bar-nav-icon
-          v-if="isMobile"
-          color="primary"
-          @click.stop="drawer = !drawer"
-        ></v-app-bar-nav-icon>
-        <div>
-          <v-img
-            src="../assets/CALISTHENICS_LOGO_NETTSIDE.png"
-            contain
-            height="80"
-            max-width="140"
-          />
-        </div>
-        <div class="flex-container" v-if="!isMobile">
-          <LinkButton
-            v-for="link in links"
-            :key="link.name"
-            :name="link.name"
-            :link="link.link"
-            :menuLinks="link.menuLinks"
-          />
-        </div>
-        <div width="140"></div>
-      </div>
+      <v-container fluid>
+        <v-row>
+          <v-col>
+            <v-row align="center" justify="space-between">
+              <v-app-bar-nav-icon
+                v-if="isMobile"
+                color="primary"
+                @click.stop="drawer = !drawer"
+              ></v-app-bar-nav-icon>
+              <v-img
+                src="../assets/CALISTHENICS_LOGO_NETTSIDE.png"
+                contain
+                height="70"
+                max-width="140"
+              />
+            </v-row>
+          </v-col>
+          <v-row align="center" justify="center" v-if="!isMobile">
+            <LinkButton
+              v-for="link in links"
+              :key="link.name"
+              :name="link.name"
+              :link="link.link"
+              :menuLinks="link.menuLinks"
+            />
+          </v-row>
+        </v-row>
+      </v-container>
     </v-app-bar>
-
     <v-navigation-drawer color="black" v-model="drawer" absolute temporary>
-      <v-list-item>
-        <v-btn
-          class="ma-2"
-          color="primary"
-          text
-          icon
-          @click.stop="drawer = !drawer"
-        >
-          <v-icon>mdi-close</v-icon>
-        </v-btn>
-      </v-list-item>
-
       <v-list nav shaped>
         <v-list-item
           class="tile"
@@ -52,9 +42,9 @@
           :to="link.link"
         >
           <v-list-item-content>
-            <v-list-item-title class="list-item-text">
-              {{ link.name }}
-            </v-list-item-title>
+            <v-list-item-title class="list-item-text">{{
+              link.name
+            }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>

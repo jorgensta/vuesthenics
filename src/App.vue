@@ -6,8 +6,8 @@
       backgroundRepeat: 'repeat'
     }"
   >
-    <NavBar />
     <v-content>
+      <NavBar />
       <router-view></router-view>
     </v-content>
     <FooterBar />
@@ -30,7 +30,13 @@ import FooterBar from "./components/FooterBar.vue";
 export default class App extends Vue {}
 </script>
 
-<style>
+<style lang="scss">
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
 .zindex {
   z-index: inherit;
 }
