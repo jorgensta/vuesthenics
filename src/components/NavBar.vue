@@ -1,7 +1,7 @@
 <template>
   <div>
-    <v-app-bar class="app-bar" app height="100" color="black">
-      <v-container fluid>
+    <v-app-bar class="app-bar" app height="100">
+      <v-container>
         <v-row>
           <v-col>
             <v-row align="center" justify="space-between">
@@ -18,19 +18,20 @@
               />
             </v-row>
           </v-col>
-          <v-row align="center" justify="center" v-if="!isMobile">
+          <v-row align="center" justify="end" v-if="!isMobile">
             <LinkButton
               v-for="link in links"
               :key="link.name"
-              :name="link.name"
+              :name="$t(link.name)"
               :link="link.link"
               :menuLinks="link.menuLinks"
             />
+            <LocaleChanger />
           </v-row>
         </v-row>
       </v-container>
     </v-app-bar>
-    <v-navigation-drawer color="black" v-model="drawer" absolute temporary>
+    <v-navigation-drawer dark v-model="drawer" absolute temporary>
       <v-list nav shaped>
         <v-list-item
           class="tile"
@@ -43,7 +44,7 @@
         >
           <v-list-item-content>
             <v-list-item-title class="list-item-text">{{
-              link.name
+              $t(link.name)
             }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
@@ -57,11 +58,13 @@ import Vue from "vue";
 import Component from "vue-class-component";
 import LinkButton from "./LinkButton.vue";
 import LocalizationButton from "./LocalizationButton.vue";
+import LocaleChanger from "./LocaleChanger.vue";
 import { Link } from "../types/link";
 
 @Component({
   components: {
     LinkButton,
+    LocaleChanger,
     LocalizationButton
   }
 })
@@ -79,23 +82,23 @@ export default class NavBar extends Vue {
   }
   links: Array<Link> = [
     {
-      name: "About",
+      name: "navbar.about",
       link: "/about"
     },
     {
-      name: "Contact",
+      name: "navbar.contact",
       link: "/contact"
     },
     {
-      name: "Apply",
+      name: "navbar.apply",
       link: "/apply"
     },
     {
-      name: "Instagram",
+      name: "navbar.instagram",
       link: "/instagram"
     },
     {
-      name: "F.A.Q.",
+      name: "navbar.faq",
       link: "/faq"
     }
   ];

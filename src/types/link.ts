@@ -1,5 +1,5 @@
 export type Link = {
-  name: String;
+  name: any;
   link: String;
 };
 

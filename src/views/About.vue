@@ -57,7 +57,7 @@ export default class About extends Vue {
 }
 
 .container div p {
-  max-width: 70%;
+  max-width: 80%;
   margin: 5px;
 }
 </style>

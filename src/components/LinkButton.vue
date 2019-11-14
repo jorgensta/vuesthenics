@@ -28,6 +28,7 @@ export default class LinkButton extends Vue {
 }
 .hover:after {
   background: none repeat scroll 0 0 transparent;
+  cursor: pointer;
   bottom: 0;
   content: "";
   height: 2px;
