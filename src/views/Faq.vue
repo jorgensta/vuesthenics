@@ -16,11 +16,11 @@
             :key="answer"
           >
             <v-expansion-panel-header>
-              <h2 class="panel-header">{{ question }}</h2>
+              <h2 class="panel-header">{{ $t(question) }}</h2>
             </v-expansion-panel-header>
-            <v-expansion-panel-content class="panel-content">{{
-              answer
-            }}</v-expansion-panel-content>
+            <v-expansion-panel-content class="panel-content">
+              {{ $t(answer) }}
+            </v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>
       </transition>
@@ -41,51 +41,44 @@ interface FAQitem {
 export default class Faq extends Vue {
   qs: Array<FAQitem> = [
     {
-      question: "What is the semester fee?",
-      answer: "350 NOK"
+      question: "faq.semester.q",
+      answer: "faq.semester.a"
     },
     {
-      question: "Is the group full?",
-      answer:
-        "Yes, currently our group is full. We invite more members when we the capacity allow for it"
+      question: "faq.groupfull.q",
+      answer: "faq.groupfull.a"
     },
     {
-      question: "How can i become a member?",
-      answer:
-        "We only provide membership by invitation only. We send out invitation to the best candidates in our waiting list. The only thing that you have to do is apply to us, and you're automatically listed in our waiting list!"
+      question: "faq.memberhow.q",
+      answer: "faq.memberhow.a"
     },
     {
-      question: "Do you have try-outs?",
-      answer:
-        "At the moment we do not have try-outs. We are in the process of trying to find a location and the resources neccessary to arrange an open trainig for everybody"
+      question: "faq.tryouts.q",
+      answer: "faq.tryouts.a"
     },
     {
-      question: "Do i need a NTNUI-membership?",
-      answer: "Yes"
+      question: "faq.ntnuimembership.q",
+      answer: "faq.ntnuimembership.a"
     },
     {
-      question: "Do i need to be an expert?",
-      answer:
-        "No not at all! We only expect you to be interested and determinated. Beginners are more than welcome!"
+      question: "faq.expert.q",
+      answer: "faq.expert.a"
     },
     {
-      question: "Do i need any knowledge of calisthenics",
-      answer:
-        "No knowledge needed. We'll provide you with everything you need to know"
+      question: "faq.knowledge.q",
+      answer: "faq.knowledge.a"
     },
     {
-      question: "Can i just show up on your trainings?",
-      answer:
-        "No unfortunately not. With so many people that want to join that we cannot make such exceptions"
+      question: "faq.showup.q",
+      answer: "faq.showup.a"
     },
     {
-      question: "Do you have a capacity limit?",
-      answer:
-        "Yes we have. We're around 70-80 active people, and that is currently our max capacity"
+      question: "faq.capacity.q",
+      answer: "faq.capacity.a"
     },
     {
-      question: "How many trainings do you have each week?",
-      answer: "We have 3 trainings each week. Each training is 2 hours"
+      question: "faq.howmanytrainings.q",
+      answer: "faq.howmanytrainings.a"
     }
   ];
 }

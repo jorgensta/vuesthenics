@@ -11,12 +11,10 @@ export default new Vuetify({
     iconfont: "md"
   },
   theme: {
-    default: "light",
-    dark: true,
     themes: {
       dark: {
-        primary: "#00000",
-        accent: "#FFFF00",
+        primary: "#000000",
+        accent: "#000000",
         secondary: "#00843D",
         success: "#4CAF50",
         info: "#2196F3",
@@ -24,7 +22,7 @@ export default new Vuetify({
         error: "#FF5252"
       },
       light: {
-        primary: "#00000",
+        primary: "#FFFFFF",
         accent: "#FFFF00",
         secondary: "#00843D",
         success: "#4CAF50",

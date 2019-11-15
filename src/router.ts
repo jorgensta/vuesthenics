@@ -5,6 +5,7 @@ const About = () => import("./views/About.vue");
 const Faq = () => import("./views/Faq.vue");
 const Apply = () => import("./views/Apply.vue");
 const Instagram = () => import("./views/Instagram.vue");
+const Contact = () => import("./views/Contact.vue");
 
 Vue.use(Router);
 
@@ -20,6 +21,11 @@ export default new Router({
       path: "/about",
       name: "about",
       component: About
+    },
+    {
+      path: "/contact",
+      name: "contact",
+      component: Contact
     },
     {
       path: "/apply",

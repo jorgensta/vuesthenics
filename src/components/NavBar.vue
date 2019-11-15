@@ -1,15 +1,19 @@
 <template>
   <div>
-    <v-app-bar class="app-bar" app height="100">
-      <v-container>
+    <v-app-bar class="app-bar" color="black" app height="100">
+      <v-container fluid>
         <v-row>
           <v-col>
             <v-row align="center" justify="space-between">
-              <v-app-bar-nav-icon
-                v-if="isMobile"
-                color="primary"
-                @click.stop="drawer = !drawer"
-              ></v-app-bar-nav-icon>
+              <v-row align="center" justify="space-evenly">
+                <v-app-bar-nav-icon
+                  v-if="isMobile"
+                  color="primary"
+                  @click.stop="drawer = !drawer"
+                ></v-app-bar-nav-icon>
+                <LocaleChanger v-if="isMobile" />
+              </v-row>
+
               <v-img
                 src="../assets/CALISTHENICS_LOGO_NETTSIDE.png"
                 contain
@@ -31,7 +35,7 @@
         </v-row>
       </v-container>
     </v-app-bar>
-    <v-navigation-drawer dark v-model="drawer" absolute temporary>
+    <v-navigation-drawer color="black" v-model="drawer" absolute temporary>
       <v-list nav shaped>
         <v-list-item
           class="tile"
@@ -43,9 +47,9 @@
           :to="link.link"
         >
           <v-list-item-content>
-            <v-list-item-title class="list-item-text">{{
-              $t(link.name)
-            }}</v-list-item-title>
+            <v-list-item-title class="list-item-text">
+              {{ $t(link.name) }}
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -75,6 +79,7 @@ export default class NavBar extends Vue {
     switch (this.$vuetify.breakpoint.name) {
       case "xs":
       case "sm":
+      case "md":
         return true;
       default:
         return false;
