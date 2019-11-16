@@ -1,11 +1,6 @@
 <template>
   <v-footer class="footer" padless>
     <v-card flat tile width="100%" color="black" dark>
-      <v-card-text>
-        <v-btn color="yellow" icon v-for="iconName in icons" :key="iconName">
-          <v-icon x-large>{{ iconName }}</v-icon>
-        </v-btn>
-      </v-card-text>
       <v-card-text class="white--text"
         >{{ year }} — Calisthenics IT-crew</v-card-text
       >
