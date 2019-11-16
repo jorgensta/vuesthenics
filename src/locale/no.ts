@@ -11,7 +11,7 @@ export default {
       title: "Sosiale aktiviteter"
     },
     training: {
-      title: "våre treninger"
+      title: "Våre treninger"
     },
     board: {
       title: "Styret"
