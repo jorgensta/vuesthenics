@@ -5,7 +5,7 @@
         <v-expansion-panels
           multiple
           dark
-          popout
+          accordion
           :class="isMobile ? 'panel__mobile' : 'panel'"
           transition="scroll-y-transition"
         >
