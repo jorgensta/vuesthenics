@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <Carousel />
     <div v-for="section in aboutSections" :key="section.title">
       <h1 class="display-1 font-weight-light">{{ section.title }}</h1>
       <p>{{ section.paragraph }}</p>
@@ -9,13 +10,18 @@
 <script lang="ts">
 import Vue from "vue";
 import Component from "vue-class-component";
+import Carousel from "../components/Carousel.vue";
 
 interface AboutSection {
   title: String;
   paragraph: String;
 }
 
-@Component({})
+@Component({
+  components: {
+    Carousel
+  }
+})
 export default class About extends Vue {
   aboutSections: Array<AboutSection> = [
     {

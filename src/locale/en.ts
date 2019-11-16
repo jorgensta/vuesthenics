@@ -1,4 +1,8 @@
 export default {
+  changeLanguage: "Change language",
+  selectLanguage: "Select language",
+  save: "Save",
+  close: "Close",
   navbar: {
     about: "About",
     contact: "Contact",
@@ -7,11 +11,12 @@ export default {
     faq: "F.A.Q."
   },
   contact: {
+    title: "Contact us on these platforms",
     facebook: {
       title: "Facebook"
     },
     instagram: {
-      title: "Facebook"
+      title: "Instagram"
     },
     email: {
       title: "E-mail"

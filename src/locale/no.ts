@@ -1,10 +1,26 @@
 export default {
+  changeLanguage: "Bytt språk",
+  selectLanguage: "Velg språk",
+  save: "Lagre",
+  close: "Lukk",
   navbar: {
     about: "Om oss",
     contact: "Kontakt",
     apply: "Søk medlemsskap",
     instagram: "Instagram",
     faq: "F.A.Q."
+  },
+  contact: {
+    title: "Kom i kontakt med oss på disse platformene",
+    facebook: {
+      title: "Facebook"
+    },
+    instagram: {
+      title: "Instagram"
+    },
+    email: {
+      title: "E-post"
+    }
   },
   apply: {
     title: "Søk medlemsskap hos oss",

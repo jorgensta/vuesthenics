@@ -6,7 +6,7 @@
           multiple
           dark
           popout
-          class="panel"
+          :class="isMobile ? 'panel__mobile' : 'panel'"
           transition="scroll-y-transition"
         >
           <v-expansion-panel
@@ -39,6 +39,14 @@ interface FAQitem {
 
 @Component({})
 export default class Faq extends Vue {
+  get isMobile(): boolean {
+    switch (this.$vuetify.breakpoint.name) {
+      case "xs":
+        return true;
+      default:
+        return false;
+    }
+  }
   qs: Array<FAQitem> = [
     {
       question: "faq.semester.q",
@@ -93,6 +101,12 @@ export default class Faq extends Vue {
 .panel {
   margin: 10px;
   max-width: 80%;
+  opacity: 0.95;
+}
+
+.panel__mobile {
+  margin: 5px;
+  max-width: 95%;
   opacity: 0.95;
 }
 .panel-header {

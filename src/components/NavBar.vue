@@ -11,7 +11,6 @@
                   color="primary"
                   @click.stop="drawer = !drawer"
                 ></v-app-bar-nav-icon>
-                <LocaleChanger v-if="isMobile" />
               </v-row>
 
               <v-img
@@ -20,6 +19,21 @@
                 height="70"
                 max-width="140"
               />
+              <v-menu v-if="isMobile" bottom left>
+                <template v-slot:activator="{ on }">
+                  <v-btn dark icon v-on="on">
+                    <v-icon>mdi-dots-vertical</v-icon>
+                  </v-btn>
+                </template>
+
+                <v-list dark rounded>
+                  <v-list-item class="tile" @click="dialog = !dialog">
+                    <v-list-item-title class="list-item-text">{{
+                      $t("changeLanguage")
+                    }}</v-list-item-title>
+                  </v-list-item>
+                </v-list>
+              </v-menu>
             </v-row>
           </v-col>
           <v-row align="center" justify="end" v-if="!isMobile">
@@ -47,13 +61,39 @@
           :to="link.link"
         >
           <v-list-item-content>
-            <v-list-item-title class="list-item-text">
-              {{ $t(link.name) }}
-            </v-list-item-title>
+            <v-list-item-title class="list-item-text">{{
+              $t(link.name)
+            }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
+    <v-row justify="center">
+      <v-dialog v-model="dialog" dark scrollable max-width="300px">
+        <v-card>
+          <v-card-title>{{ $t("selectLanguage") }}</v-card-title>
+          <v-divider></v-divider>
+          <v-card-text>
+            <v-radio-group v-model="selectedLanguage" column>
+              <v-radio label="Norsk" value="no"></v-radio>
+              <v-radio label="English" value="en"></v-radio>
+            </v-radio-group>
+          </v-card-text>
+          <v-divider></v-divider>
+          <v-card-actions>
+            <v-btn color="blue darken-1" text @click="dialog = false">{{
+              $t("close")
+            }}</v-btn>
+            <v-btn
+              color="blue darken-1"
+              text
+              @click="saveLanguage(selectedLanguage)"
+              >{{ $t("save") }}</v-btn
+            >
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
+    </v-row>
   </div>
 </template>
 
@@ -74,6 +114,12 @@ import { Link } from "../types/link";
 })
 export default class NavBar extends Vue {
   drawer: boolean = false;
+  dialog: boolean = false;
+
+  saveLanguage(lang: string) {
+    this.$i18n.locale = lang;
+    this.dialog = false;
+  }
 
   get isMobile(): boolean {
     switch (this.$vuetify.breakpoint.name) {
