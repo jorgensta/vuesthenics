@@ -3,6 +3,20 @@ export default {
   selectLanguage: "Select language",
   save: "Save",
   close: "Close",
+  about: {
+    aboutus: {
+      title: "About us"
+    },
+    social: {
+      title: "Social activities"
+    },
+    training: {
+      title: "Our trainings"
+    },
+    board: {
+      title: "The board"
+    }
+  },
   navbar: {
     about: "About",
     contact: "Contact",
@@ -24,7 +38,8 @@ export default {
   },
   apply: {
     title: "Apply for membership",
-    p: "LOREM IPSUM"
+    p: "LOREM IPSUM",
+    button: "Apply here"
   },
   faq: {
     semester: {

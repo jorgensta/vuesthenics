@@ -10,7 +10,7 @@
       color="#00843d"
       rounded
       x-large
-      >Apply</v-btn
+      >{{ $t("apply.button") }}</v-btn
     >
   </div>
 </template>

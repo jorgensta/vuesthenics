@@ -3,6 +3,20 @@ export default {
   selectLanguage: "Velg språk",
   save: "Lagre",
   close: "Lukk",
+  about: {
+    aboutus: {
+      title: "Om oss"
+    },
+    social: {
+      title: "Sosiale aktiviteter"
+    },
+    training: {
+      title: "våre treninger"
+    },
+    board: {
+      title: "Styret"
+    }
+  },
   navbar: {
     about: "Om oss",
     contact: "Kontakt",
@@ -24,7 +38,8 @@ export default {
   },
   apply: {
     title: "Søk medlemsskap hos oss",
-    p: "LOREM IPSUM"
+    p: "LOREM IPSUM",
+    button: "Søk her"
   },
   faq: {
     semester: {
