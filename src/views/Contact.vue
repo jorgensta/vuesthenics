@@ -55,7 +55,6 @@ export default class Contact extends Vue {
   margin-bottom: 1%;
   display: inline-block;
   font-weight: 300;
-  font-size: calc(2vw + 2vh +0.8vmin);
 }
 .contactButton {
   margin: 5px;
@@ -69,7 +68,6 @@ export default class Contact extends Vue {
   margin-bottom: 1%;
   display: inline-block;
   font-weight: 300;
-  font-size: calc(2vw + 2vh +0.8vmin);
   border-bottom: 2px solid #00843d;
 }
 </style>
