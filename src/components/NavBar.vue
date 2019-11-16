@@ -4,8 +4,8 @@
       <v-container fluid>
         <v-row>
           <v-col>
-            <v-row align="center" justify="space-between">
-              <v-row align="center" justify="space-evenly">
+            <v-row align="center" justify="space-between" class="hamburger">
+              <v-row>
                 <v-app-bar-nav-icon
                   v-if="isMobile"
                   color="primary"
@@ -81,11 +81,11 @@
           </v-card-text>
           <v-divider></v-divider>
           <v-card-actions>
-            <v-btn color="blue darken-1" text @click="dialog = false">{{
+            <v-btn color="green lighten-1" text @click="dialog = false">{{
               $t("close")
             }}</v-btn>
             <v-btn
-              color="blue darken-1"
+              color="green lighten-1"
               text
               @click="saveLanguage(selectedLanguage)"
               >{{ $t("save") }}</v-btn
@@ -157,6 +157,9 @@ export default class NavBar extends Vue {
 </script>
 
 <style scoped>
+.hamburger {
+  margin-left: 2rem;
+}
 .flex-container {
   display: flex;
 }
