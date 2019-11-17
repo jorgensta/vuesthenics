@@ -5,8 +5,8 @@
     </h1>
     <v-row no-gutters>
       <v-col v-for="contact in contactInfo" :key="contact.key" cols="12" sm="4">
-        <a :href="contact.href" target="_blank">
-          <h2 class="header">{{ $t(`contact.${contact.key}.title`) }}</h2>
+        <a :href="contact.href" class="display-1 ref" target="_blank">
+          {{ $t(`contact.${contact.key}.title`) }}
         </a>
         <v-btn
           class="contactButton"
@@ -49,6 +49,9 @@ export default class Contact extends Vue {
 }
 </script>
 <style scoped>
+.ref {
+  font-weight: 300;
+}
 .contactHeader {
   color: white;
   margin: 5px;

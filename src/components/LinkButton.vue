@@ -1,6 +1,6 @@
 <template>
   <div class="hover">
-    <v-btn color="purple" :to="link" link text x-large active-class="btnActive">
+    <v-btn color="yellow" :to="link" link text x-large active-class="btnActive">
       <h2>{{ name }}</h2>
     </v-btn>
   </div>

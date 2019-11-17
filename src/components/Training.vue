@@ -10,6 +10,7 @@
           :width="isMobile ? '250' : '350'"
           :height="isMobile ? '250' : '350'"
           :src="image.url"
+          alt=""
           contain
         >
         </v-img>
