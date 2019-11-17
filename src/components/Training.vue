@@ -10,7 +10,7 @@
           :width="isMobile ? '250' : '350'"
           :height="isMobile ? '250' : '350'"
           :src="image.url"
-          alt=""
+          :alt="image.alt"
           contain
         >
         </v-img>
@@ -38,15 +38,18 @@ export default class Training extends Vue {
   images: Array<Object> = [
     {
       url: "https://photos.smugmug.com/photos/i-J3tqd73/0/X4/i-J3tqd73-X4.jpg",
-      time: "about.training.time1"
+      time: "about.training.time1",
+      alt: "Personer sitter i sirkel"
     },
     {
       url: "https://photos.smugmug.com/photos/i-nNpnJFW/0/X4/i-nNpnJFW-X4.jpg",
-      time: "about.training.time2"
+      time: "about.training.time2",
+      alt: "Handstand med tekst på rygg"
     },
     {
       url: "https://photos.smugmug.com/photos/i-tVpmxcd/0/X4/i-tVpmxcd-X4.jpg",
-      time: "about.training.time3"
+      time: "about.training.time3",
+      alt: "Backflip bilde"
     }
   ];
 }

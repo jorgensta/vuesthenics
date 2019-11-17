@@ -107,15 +107,13 @@
 import Vue from "vue";
 import Component from "vue-class-component";
 import LinkButton from "./LinkButton.vue";
-import LocalizationButton from "./LocalizationButton.vue";
 import LocaleChanger from "./LocaleChanger.vue";
 import { Link } from "../types/link";
 
 @Component({
   components: {
     LinkButton,
-    LocaleChanger,
-    LocalizationButton
+    LocaleChanger
   }
 })
 export default class NavBar extends Vue {

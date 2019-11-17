@@ -1,6 +1,6 @@
 <template>
   <div class="hover">
-    <v-btn color="yellow" :to="link" link text x-large active-class="btnActive">
+    <v-btn color="white" :to="link" link text x-large active-class="btnActive">
       <h2>{{ name }}</h2>
     </v-btn>
   </div>
@@ -53,7 +53,6 @@ h2 {
 }
 .v-btn {
   min-width: 0;
-
   font-weight: 300;
   font-size: 72!;
   color: white;

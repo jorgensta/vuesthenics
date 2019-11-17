@@ -6,11 +6,13 @@ export default {
   about: {
     aboutus: {
       title: "About us",
-      p: "English about us summary"
+      p:
+        "NTNUI Calisthenics is a group that focuses on strength training with only their body as resistance. Calisthenics is based on gymnastics, and often goes under the pseudonym “Street Workout”.If you're interested in getting body awareness and the ability to do amazing tricks, then this is a group just for you. We're a group for everyone, every level, regardless of experience and background. Pull ups, push ups, muscle ups, human flag, handstand, planche, front lever, back lever, 90 degree push ups. Some of these exercises are probably well known, and is a few exercies that we're trying to achieve! Body control and awareness takes time, therefore we got trainers and members with years of experience, consulting and guiding you for the better. You've probably seen people doing backflips from bars on YouTube, looking like monkeys. This is the acrobatic part of Calisthenics. Through NTNUI Calisthenics, we try to create an arena for those who want to try a new, thrilling and fulfilling sport that enhance body control, creativity and gives you a sense of achievment."
     },
     social: {
       title: "Social activities",
-      p: "English social activities summary"
+      p:
+        "We offer and arrange a variety of social activities throughout both the spring and fall semesters. We try to be as social as we can, with being flexible and innovative in our search for traditions. We organize social evenings, internal and external workshops, our own orientation week for the big indenture in the fall, out-of-town activites, new years party, get-to-know-eachother parties, koie trips (cabintrip) and lastly our yearly training camp to southern europe in the spring. In addition to all our activies, you'll be a part of a tight knit community with likeminded people, which lays a foundation for longlasting friendships."
     },
     training: {
       title: "Our trainings",
