@@ -5,13 +5,18 @@ export default {
   close: "Close",
   about: {
     aboutus: {
-      title: "About us"
+      title: "About us",
+      p: "English about us summary"
     },
     social: {
-      title: "Social activities"
+      title: "Social activities",
+      p: "English social activities summary"
     },
     training: {
-      title: "Our trainings"
+      title: "Our trainings",
+      time1: "Wednesdays 20:00 - 22:00",
+      time2: "Fridays 19:00 - 21:00",
+      time3: "Sundays 19:00 - 21:00"
     },
     board: {
       title: "The board"

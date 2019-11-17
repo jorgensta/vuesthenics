@@ -94,8 +94,9 @@ export default class Faq extends Vue {
 <style scoped>
 .panel-container {
   z-index: 2;
-  margin: 10px;
-  padding: 10px;
+  color: white;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 .panel {

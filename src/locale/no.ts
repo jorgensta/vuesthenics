@@ -5,16 +5,24 @@ export default {
   close: "Lukk",
   about: {
     aboutus: {
-      title: "Om oss"
+      title: "Om oss",
+      p:
+        "NTNUI Calisthenics er en gruppe som fokuserer på stryketrening med bruk av egen kroppsvekt. Treningsformen er turnbasert og går ofte under navnet “Street Workout”. Dersom du er interessert i å få bedre kroppskontroll og klare nye og kule triks så er dette gruppa for deg. Vi har åpent for alle, uansett nivå eller sportslig bakgrunn. Pull ups, push ups, muscle ups, human flag, handstand, planche, front lever, back lever, 90 degree push ups. Noen av disse øvelsene er sikkert kjente, men sikkert ikke alle, dette er øvelser vi trener mot! Å få god kroppskontroll tar tid, og vi har trenere som har drevet med sporten i mange år og som vil gi deg veiledning på hvordan å bli bedre. Du har sikkert sett folk på YouTube som tar salto av pull ups-stenger og ser ut som apekatter. Dette er den akrobatiske delen av Calisthenics sporten. Gjennom NTNUI Calisthenics prøver vi å skape en arena for de som vil prøve en ny, spennende og givende treningsform som fremmer kroppskontroll, kreativitet og mestringsfølelse."
     },
     social: {
-      title: "Sosiale aktiviteter"
+      title: "Sosiale aktiviteter",
+      p:
+        "Vi tilbyr og arrangerer en rekke sosiale aktiviter gjennom både vår- og høstsemesteret. Vi prøver å være så sosiale som vi bare kan, med å være fleksible og nytekende i vårt søk mot tradisjoner. Vi arrangerer sosiale kvelder, interne og eksterne workshops, vår egen fadderuke for det store innrykkskullet på høsten, aktivitetsturer utenbys, nyttårsbord, bli-kjent-fester, koie-tur, og ikke minst den årlige treningsleiren på vårsemesteret til sørlige strøk. I tillegg til aktivitene som arrangeres, kommer du inn i et miljø med likesinnede, som legger et solid grunnlag for kameratskap."
     },
     training: {
-      title: "Våre treninger"
+      title: "Våre treninger",
+      time1: "Onsdager 20:00 - 22:00",
+      time2: "Fredager 19:00 - 21:00",
+      time3: "Søndager 19:00 - 21:00"
     },
     board: {
-      title: "Styret"
+      title: "Styret",
+      p: "Om oss paragraf / seksjon / avsnitt"
     }
   },
   navbar: {

@@ -4,7 +4,7 @@
     <p class="paragraph">{{ $t("apply.p") }}</p>
     <v-btn
       class="white--text"
-      href="https://docs.google.com/forms/d/1SZN6VbFeGoXt6nGPCJ-aaYwb0QfQdRGOS2CBf1-vaBc/edit?fbclid=IwAR3Uo2NCRrHs2I8EDfC1YGVutoakCRadYnylPZxzgsGN8afN3TdMWeUgfXI"
+      :href="googleDocsLink"
       target="_blank"
       elevation="10"
       color="#00843d"
@@ -20,13 +20,15 @@ import Vue from "vue";
 import Component from "vue-class-component";
 
 @Component({})
-export default class Apply extends Vue {}
+export default class Apply extends Vue {
+  googleDocsLink: String =
+    "https://docs.google.com/forms/d/1SZN6VbFeGoXt6nGPCJ-aaYwb0QfQdRGOS2CBf1-vaBc/edit?fbclid=IwAR3Uo2NCRrHs2I8EDfC1YGVutoakCRadYnylPZxzgsGN8afN3TdMWeUgfXI";
+}
 </script>
 <style scoped>
 .container {
   color: white;
-  margin-top: 1%;
-  padding: 5px;
+  padding: 1rem;
   z-index: 2;
 }
 
@@ -39,6 +41,7 @@ export default class Apply extends Vue {}
 }
 
 .paragraph {
+  padding: 0.5rem;
   font-size: calc(0.2vw + 1.4vh + 0.4vmin);
 }
 </style>

@@ -49,7 +49,13 @@
         </v-row>
       </v-container>
     </v-app-bar>
-    <v-navigation-drawer color="black" v-model="drawer" absolute temporary>
+    <v-navigation-drawer
+      color="black"
+      v-model="drawer"
+      absolute
+      fixed
+      temporary
+    >
       <v-list nav shaped>
         <v-list-item
           class="tile"
@@ -158,7 +164,7 @@ export default class NavBar extends Vue {
 
 <style scoped>
 .hamburger {
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 .flex-container {
   display: flex;
