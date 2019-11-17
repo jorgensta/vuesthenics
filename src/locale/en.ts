@@ -43,7 +43,9 @@ export default {
   },
   apply: {
     title: "Apply for membership",
-    p: "LOREM IPSUM",
+    p:
+      "We're always looking for people that are motivated! Each semester we invite people from the whole experience spectrum; from total beginners, to people with years of training under their belt. Do you want to join one of the most thrilling groups in NTNUI? Send us an application then!",
+
     button: "Apply here"
   },
   faq: {

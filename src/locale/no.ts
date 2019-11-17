@@ -46,7 +46,8 @@ export default {
   },
   apply: {
     title: "Søk medlemsskap hos oss",
-    p: "LOREM IPSUM",
+    p:
+      "Vi er alltid på utkikk etter folk som er motiverte! Hvert semester tar vi inn alt mulig; fra de som aldri har prøvd calisthenics før, til dem som har årevis med erfaring. Har du lyst til å bli med i en av de mest spennende gruppene i NTNUI? sleng inn en søknad!",
     button: "Søk her"
   },
   faq: {

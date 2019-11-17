@@ -42,6 +42,7 @@ export default class Apply extends Vue {
 
 .paragraph {
   padding: 0.5rem;
+  width: 75%;
   font-size: calc(0.2vw + 1.4vh + 0.4vmin);
 }
 </style>
