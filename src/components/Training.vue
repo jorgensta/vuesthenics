@@ -1,14 +1,14 @@
 <template>
   <v-container class="container" fluid>
-    <v-row>
+    <v-row justify="center">
       <div v-for="image in images" :key="image.url">
         <h1 class="headline font-weight-light text-center">
           {{ $t(image.time) }}
         </h1>
         <v-img
           class="trainingImage"
-          width="350"
-          height="350"
+          :width="isMobile ? '250' : '350'"
+          :height="isMobile ? '250' : '350'"
           :src="image.url"
           contain
         >
@@ -24,6 +24,16 @@ import Component from "vue-class-component";
 
 @Component
 export default class Training extends Vue {
+  get isMobile(): boolean {
+    switch (this.$vuetify.breakpoint.name) {
+      case "xs":
+      case "sm":
+      case "md":
+        return true;
+      default:
+        return false;
+    }
+  }
   images: Array<Object> = [
     {
       url: "https://photos.smugmug.com/photos/i-J3tqd73/0/X4/i-J3tqd73-X4.jpg",
