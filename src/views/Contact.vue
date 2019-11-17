@@ -5,7 +5,7 @@
     </h1>
     <v-row no-gutters>
       <v-col v-for="contact in contactInfo" :key="contact.key" cols="12" sm="4">
-        <a :href="contact.href" class="display-1 ref" target="_blank">
+        <a :href="contact.href" class="headline ref" target="_blank">
           {{ $t(`contact.${contact.key}.title`) }}
         </a>
         <v-btn

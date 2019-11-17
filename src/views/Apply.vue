@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h1 class="header">{{ $t("apply.title") }}</h1>
-    <p class="paragraph">{{ $t("apply.p") }}</p>
+    <p class="body-1">{{ $t("apply.p") }}</p>
     <v-btn
       class="white--text"
       :href="googleDocsLink"

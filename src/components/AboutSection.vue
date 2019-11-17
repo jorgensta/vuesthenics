@@ -3,7 +3,7 @@
     <h1 class="display-1 font-weight-ligth header">
       {{ $t(section.title) }}
     </h1>
-    <p class="paragraph">{{ $t(section.paragraph) }}</p>
+    <p class="body-1">{{ $t(section.paragraph) }}</p>
   </div>
 </template>
 
