@@ -12,8 +12,8 @@
           :src="image.url"
           :alt="image.alt"
           contain
-        >
-        </v-img>
+        ></v-img>
+        <p class="caption text-center">Foto: NTNUI/Nils Dittrich</p>
       </div>
     </v-row>
   </v-container>
