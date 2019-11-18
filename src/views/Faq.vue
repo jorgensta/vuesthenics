@@ -18,9 +18,9 @@
             <v-expansion-panel-header>
               <h2 class="panel-header">{{ $t(question) }}</h2>
             </v-expansion-panel-header>
-            <v-expansion-panel-content class="panel-content">
-              {{ $t(answer) }}
-            </v-expansion-panel-content>
+            <v-expansion-panel-content class="panel-content">{{
+              $t(answer)
+            }}</v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>
       </transition>
@@ -55,6 +55,10 @@ export default class Faq extends Vue {
     {
       question: "faq.groupfull.q",
       answer: "faq.groupfull.a"
+    },
+    {
+      question: "faq.newMembers.q",
+      answer: "faq.newMembers.a"
     },
     {
       question: "faq.memberhow.q",

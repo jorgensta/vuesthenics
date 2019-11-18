@@ -5,7 +5,7 @@ export default {
   close: "Lukk",
   about: {
     aboutus: {
-      title: "Om oss",
+      title: "Hvem er vi?",
       p:
         "NTNUI Calisthenics er en gruppe som fokuserer på stryketrening med bruk av egen kroppsvekt. Treningsformen er turnbasert og går ofte under navnet “Street Workout”. Dersom du er interessert i å få bedre kroppskontroll og klare nye og kule triks så er dette gruppa for deg. Vi har åpent for alle, uansett nivå eller sportslig bakgrunn. Pull ups, push ups, muscle ups, human flag, handstand, planche, front lever, back lever, 90 degree push ups. Noen av disse øvelsene er sikkert kjente, men sikkert ikke alle, dette er øvelser vi trener mot! Å få god kroppskontroll tar tid, og vi har trenere som har drevet med sporten i mange år og som vil gi deg veiledning på hvordan å bli bedre. Du har sikkert sett folk på YouTube som tar salto av pull ups-stenger og ser ut som apekatter. Dette er den akrobatiske delen av Calisthenics sporten. Gjennom NTNUI Calisthenics prøver vi å skape en arena for de som vil prøve en ny, spennende og givende treningsform som fremmer kroppskontroll, kreativitet og mestringsfølelse."
     },
@@ -30,7 +30,7 @@ export default {
     contact: "Kontakt",
     apply: "Søk medlemsskap",
     instagram: "Instagram",
-    faq: "F.A.Q."
+    faq: "FAQ"
   },
   contact: {
     title: "Kom i kontakt med oss på disse platformene",
@@ -59,6 +59,11 @@ export default {
       q: "Er gruppen full?",
       a: "Den er full, dessverre"
     },
+    newMembers: {
+      q: "Når har dere inntak av nye medlemmer?",
+      a:
+        "Vi tar inn nye medlemmer hvert semester. Vi har flest ledige plasser på høsten, men også noen plasser på våren."
+    },
     memberhow: {
       q: "Hvordan kan jeg bli medlem?",
       a:
@@ -83,7 +88,8 @@ export default {
     },
     showup: {
       q: "Er det bare å komme på trening?",
-      a: "Nei. Alle treningene er reservert for de med medlemsskap hos oss."
+      a:
+        "Nei, dessverre. Alle treningene er reservert for de med medlemsskap hos oss."
     },
     capacity: {
       q: "Har dere noen grense på antall medlemmer?",

@@ -36,7 +36,7 @@ import axios from "axios";
 
 @Component
 export default class Instagram extends Vue {
-  token?: String =
+  token: String =
     process.env.ACCESS_TOKEN_INSTAGRAM ||
     "3098531026.e2af318.e605fa96db2e4855b1a69e6901461b2a";
 

@@ -5,7 +5,7 @@ export default {
   close: "Close",
   about: {
     aboutus: {
-      title: "About us",
+      title: "Who are we?",
       p:
         "NTNUI Calisthenics is a group that focuses on strength training with only their body as resistance. Calisthenics is based on gymnastics, and often goes under the pseudonym “Street Workout”.If you're interested in getting body awareness and the ability to do amazing tricks, then this is a group just for you. We're a group for everyone, every level, regardless of experience and background. Pull ups, push ups, muscle ups, human flag, handstand, planche, front lever, back lever, 90 degree push ups. Some of these exercises are probably well known, and is a few exercies that we're trying to achieve! Body control and awareness takes time, therefore we got trainers and members with years of experience, consulting and guiding you for the better. You've probably seen people doing backflips from bars on YouTube, looking like monkeys. This is the acrobatic part of Calisthenics. Through NTNUI Calisthenics, we try to create an arena for those who want to try a new, thrilling and fulfilling sport that enhance body control, creativity and gives you a sense of achievment."
     },
@@ -29,7 +29,7 @@ export default {
     contact: "Contact",
     apply: "Apply",
     instagram: "Instagram",
-    faq: "F.A.Q."
+    faq: "FAQ"
   },
   contact: {
     title: "Contact us on these platforms",
@@ -59,6 +59,11 @@ export default {
       q: "Is the group full?",
       a: "Yes, it is currently full."
     },
+    newMembers: {
+      q: "When do you recruit new memebers?",
+      a:
+        "We bring in new members each semester. We usually have more capacity in the fall semester, and some spots in the spring."
+    },
     memberhow: {
       q: "How can i become a member?",
       a: `Since our group is currently full, we have a waiting list. To join and be queued, you'll have to apply.`
@@ -78,20 +83,21 @@ export default {
     },
     knowledge: {
       q: "How much knowledge do i need in order to join?",
-      a: "None at all :)"
+      a:
+        "You don't need any background knowledge. We try to include and help new members in the best way possible."
     },
     showup: {
       q: "Can i just show up on your trainings?",
-      a: "No you can't. Trainings are members only"
+      a: "No you can't, unfortunately. Trainings are for members only."
     },
     capacity: {
       q: "Do you have any capicity limit?",
-      a: "Yes we do. The main factor for why we're constantly full. "
+      a: "Yes we do. The gymnastics hall we train in has a maximum capacity. "
     },
     howmanytrainings: {
       q: "How many trainings do you have each week?",
       a:
-        "We have 3 trainings each week á la 2 hours. Wednesdays, Fridays and Sundays"
+        "We have 3 trainings each week á la 2 hours. Wednesdays, Fridays and Sundays."
     }
   }
 };

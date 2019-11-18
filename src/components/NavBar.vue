@@ -12,7 +12,6 @@
                   @click.stop="drawer = !drawer"
                 ></v-app-bar-nav-icon>
               </v-row>
-
               <v-img
                 src="../assets/CALISTHENICS_LOGO_NETTSIDE.png"
                 contain
@@ -28,9 +27,9 @@
 
                 <v-list dark rounded>
                   <v-list-item class="tile" @click="dialog = !dialog">
-                    <v-list-item-title class="list-item-text">{{
-                      $t("changeLanguage")
-                    }}</v-list-item-title>
+                    <v-list-item-title class="list-item-text">
+                      {{ $t("changeLanguage") }}
+                    </v-list-item-title>
                   </v-list-item>
                 </v-list>
               </v-menu>
@@ -67,9 +66,9 @@
           :to="link.link"
         >
           <v-list-item-content>
-            <v-list-item-title class="list-item-text">{{
-              $t(link.name)
-            }}</v-list-item-title>
+            <v-list-item-title class="list-item-text">
+              {{ $t(link.name) }}
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -87,9 +86,9 @@
           </v-card-text>
           <v-divider></v-divider>
           <v-card-actions>
-            <v-btn color="green lighten-1" text @click="dialog = false">{{
-              $t("close")
-            }}</v-btn>
+            <v-btn color="green lighten-1" text @click="dialog = false">
+              {{ $t("close") }}
+            </v-btn>
             <v-btn
               color="green lighten-1"
               text

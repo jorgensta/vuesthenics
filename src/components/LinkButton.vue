@@ -1,7 +1,7 @@
 <template>
   <div class="hover">
-    <v-btn color="white" :to="link" link text x-large active-class="btnActive">
-      <h2>{{ name }}</h2>
+    <v-btn color="white" :to="link" link text large active-class="btnActive">
+      <h1 class="title font-weight-light">{{ name }}</h1>
     </v-btn>
   </div>
 </template>
