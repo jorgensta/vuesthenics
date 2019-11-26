@@ -38,7 +38,7 @@ Her er noen måter å installere Yarn på:
 
 - [Installasjon for MacOS](https://yarnpkg.com/lang/en/docs/install/#mac-stable)
 - [Installasjon for Windows](https://yarnpkg.com/lang/en/docs/install/#windows-stable)
-- [Installasjon for Linux (Debina/Ubuntu)](https://yarnpkg.com/lang/en/docs/install/#debian-stable)
+- [Installasjon for Linux (Debian/Ubuntu)](https://yarnpkg.com/lang/en/docs/install/#debian-stable)
 
 Node.js installerer automatisk `npm`, så en mulig shortcut for installasjonen av `yarn` kan være å kjøre denne linjen i kommandolinjeverktøyet ditt (cmd, terminal): `npm install -g yarn`
 
