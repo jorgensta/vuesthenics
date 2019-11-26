@@ -5,9 +5,8 @@
         <v-row>
           <v-col>
             <v-row align="center" justify="space-between" class="hamburger">
-              <v-row>
+              <v-row v-if="isMobile">
                 <v-app-bar-nav-icon
-                  v-if="isMobile"
                   color="primary"
                   @click.stop="drawer = !drawer"
                 ></v-app-bar-nav-icon>
