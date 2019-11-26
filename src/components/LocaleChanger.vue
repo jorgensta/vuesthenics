@@ -30,7 +30,7 @@ export default class LocaleChanger extends Vue {
   display: flex;
   align-items: center;
   align-content: center;
-  max-width: 120px;
+  max-width: 130px;
 }
 .v-select-container {
   margin: 20px 5px 0px 5px;
