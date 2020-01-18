@@ -4,34 +4,40 @@
       <v-container fluid>
         <v-row>
           <v-col>
-            <v-row align="center" justify="space-between" class="hamburger">
-              <v-row v-if="isMobile">
+            <v-row
+              align="center"
+              :justify="isMobile ? 'space-between' : 'space-around'"
+              class="hamburger"
+            >
+              <div v-if="isMobile">
                 <v-app-bar-nav-icon
                   color="primary"
                   @click.stop="drawer = !drawer"
                 ></v-app-bar-nav-icon>
-              </v-row>
+              </div>
               <v-img
                 src="../assets/CALISTHENICS_LOGO_NETTSIDE.png"
                 contain
                 height="70"
                 max-width="140"
               />
-              <v-menu v-if="isMobile" bottom left>
-                <template v-slot:activator="{ on }">
-                  <v-btn dark icon v-on="on">
-                    <v-icon>mdi-dots-vertical</v-icon>
-                  </v-btn>
-                </template>
+              <div>
+                <v-menu v-if="isMobile" bottom left>
+                  <template v-slot:activator="{ on }">
+                    <v-btn dark icon v-on="on">
+                      <v-icon>mdi-dots-vertical</v-icon>
+                    </v-btn>
+                  </template>
 
-                <v-list dark rounded>
-                  <v-list-item class="tile" @click="dialog = !dialog">
-                    <v-list-item-title class="list-item-text">
-                      {{ $t("changeLanguage") }}
-                    </v-list-item-title>
-                  </v-list-item>
-                </v-list>
-              </v-menu>
+                  <v-list dark rounded>
+                    <v-list-item class="tile" @click="dialog = !dialog">
+                      <v-list-item-title class="list-item-text">
+                        {{ $t("changeLanguage") }}
+                      </v-list-item-title>
+                    </v-list-item>
+                  </v-list>
+                </v-menu>
+              </div>
             </v-row>
           </v-col>
           <v-row align="center" justify="end" v-if="!isMobile">
