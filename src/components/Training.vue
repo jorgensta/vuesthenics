@@ -47,6 +47,11 @@ export default class Training extends Vue {
       alt: "Handstand med tekst på rygg"
     },
     {
+      url: "https://photos.smugmug.com/photos/i-bJ9w2bS/0/X4/i-bJ9w2bS-X4.jpg",
+      time: "about.training.time4",
+      alt: "Folk som går rundt i sirkel"
+    },
+    {
       url: "https://photos.smugmug.com/photos/i-tVpmxcd/0/X4/i-tVpmxcd-X4.jpg",
       time: "about.training.time3",
       alt: "Backflip bilde"

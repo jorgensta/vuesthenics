@@ -47,9 +47,6 @@ export default class About extends Vue {
       paragraph: "about.social.p"
     }
   ];
-  changed(e: any): void {
-    console.log(e.target.value);
-  }
 }
 </script>
 
