@@ -22,7 +22,7 @@ import Component from "vue-class-component";
 @Component({})
 export default class Apply extends Vue {
   googleDocsLink: String =
-    "https://docs.google.com/forms/d/1SZN6VbFeGoXt6nGPCJ-aaYwb0QfQdRGOS2CBf1-vaBc/edit?fbclid=IwAR3Uo2NCRrHs2I8EDfC1YGVutoakCRadYnylPZxzgsGN8afN3TdMWeUgfXI";
+    "https://docs.google.com/forms/d/e/1FAIpQLSd_-2hWMqrsVFFEA6TUT485U-D1uy31HU9qhL0K4zqp8m_Izw/viewform?usp=sf_link";
 }
 </script>
 <style scoped>
