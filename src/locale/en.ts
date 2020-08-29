@@ -19,7 +19,7 @@ export default {
       time1: "Wednesdays 20:00 - 22:00",
       time2: "Fridays 19:00 - 21:00",
       time3: "Sundays 19:00 - 21:00",
-      time4: "Saturdays 12:00 - 14:00"
+      time4: "OPEN TRAINING: Saturdays 11:30 - 13:30"
     },
     board: {
       title: "The board"
