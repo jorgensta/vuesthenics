@@ -14,7 +14,7 @@
     "moment": "^2.24.0",
     "node-sass": "^4.13.1",
     "velocity-animate": "^1.5.2",
-    "vue": "^2.6.10",
+    "vue": "^3.0.0",
     "vue-class-component": "^7.0.2",
     "vue-country-flag": "^1.2.3",
     "vue-i18n": "^8.15.0",
